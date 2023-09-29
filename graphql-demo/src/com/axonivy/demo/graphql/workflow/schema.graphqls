@@ -1,0 +1,40 @@
+extend type Query {
+  allTasks: [Task]
+  taskById(id: ID): Task
+  tasksByState(state: String): [Task]
+}
+
+type Task {
+  id: ID
+  name: String
+  description: String
+  startTimeStamp: String
+  expiryTimeStamp: String
+  priority: String
+  state: String
+  activator: Activator
+  caze: Case
+  customFields: [CustomField]
+}
+
+type Case {
+  id: ID
+  name: String
+  description: String
+  tasks: [Task]
+  customFields: [CustomField]
+}
+
+type Activator {
+  id: ID
+  name: String
+  displayName: String
+  isUser: Boolean
+  isEnabled: Boolean
+}
+
+type CustomField {
+  name: String
+  type: String
+  value: String
+}

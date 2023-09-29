@@ -1,0 +1,6 @@
+RestClients:
+  test-graphql:
+    UUID: bba7b230-4fe9-4f42-8a91-162112e52522
+    Url: ${ivy.app.baseurl}/api/graphql
+    Features:
+    - ch.ivyteam.ivy.rest.client.mapper.JsonFeature
