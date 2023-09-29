@@ -2,9 +2,9 @@
   "$schema": "https://json-schema.axonivy.com/market/10.0.0/product.json",
   "installers": [
     {
-      "id": "maven-dependency",
+      "id": "maven-import",
       "data": {
-        "dependencies": [
+        "projects": [
           {
             "groupId": "com.axonivy.demo.graphql",
             "artifactId": "graphql-demo",
