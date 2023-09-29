@@ -23,8 +23,8 @@ public class GraphQLProvider {
   private static TypeDefinitionRegistry buildTypeRegistry() {
     var schemaParser = new SchemaParser();
     var typeRegistry = new TypeDefinitionRegistry();
-    SchemaFileProvider.providers()
-            .map(SchemaFileProvider::schemaFile)
+    SchemaInputStreamProvider.providers()
+            .map(SchemaInputStreamProvider::schema)
             .map(file -> schemaParser.parse(file))
             .forEach(registry -> typeRegistry.merge(registry));
     return typeRegistry;
