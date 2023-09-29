@@ -29,7 +29,7 @@
       "name" : [
         "This demo is intended for use with a client. For example, you can use Altair GraphQL Client to send queries to this demo GraphQL endpoint. See https://altairgraphql.dev",
         "",
-        "For more information on how to set it up, see the readme https://github.com/axonivy-market/graphql-demo/blob/master/graphql-demo-produc/README.md"
+        "For more information on how to set it up, see the readme https://github.com/axonivy-market/graphql-demo/blob/master/graphql-demo-product/README.md"
       ],
       "visual" : {
         "at" : { "x" : 276, "y" : 154 },
