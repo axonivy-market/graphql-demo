@@ -1,0 +1,39 @@
+{
+  "format" : "10.0.0",
+  "id" : "18AE06C981CB24B6",
+  "config" : {
+    "data" : "com.axonivy.demo.graphql.demo.Data"
+  },
+  "elements" : [ {
+      "id" : "f0",
+      "type" : "RequestStart",
+      "name" : "start.ivp",
+      "config" : {
+        "callSignature" : "start",
+        "outLink" : "start.ivp"
+      },
+      "visual" : {
+        "at" : { "x" : 96, "y" : 64 }
+      },
+      "connect" : { "id" : "f2", "to" : "f1" }
+    }, {
+      "id" : "f1",
+      "type" : "TaskEnd",
+      "visual" : {
+        "at" : { "x" : 352, "y" : 64 }
+      }
+    }, {
+      "id" : "f3",
+      "type" : "ProcessAnnotation",
+      "name" : [
+        "This demo is intended for use with a client. For example, you can use Altair GraphQL Client to send queries to this demo GraphQL endpoint. See https://altairgraphql.dev",
+        "",
+        "For more information on how to set it up, see the readme https://github.com/axonivy-market/graphql-demo/blob/master/graphql-demo-produc/README.md"
+      ],
+      "visual" : {
+        "at" : { "x" : 276, "y" : 154 },
+        "size" : { "width" : 485, "height" : 80 }
+      },
+      "connect" : { "id" : "f4", "to" : "f0" }
+    } ]
+}
