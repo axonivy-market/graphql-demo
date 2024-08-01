@@ -9,7 +9,7 @@ import ch.ivyteam.ivy.environment.Ivy;
 import ch.ivyteam.ivy.environment.IvyTest;
 import ch.ivyteam.ivy.workflow.ITask;
 
-@IvyTest
+@IvyTest(enableWebServer = true)
 class TestGraphQLWorkflow {
 
   WebTarget graphQlClient = Ivy.rest().client("test-graphql");
