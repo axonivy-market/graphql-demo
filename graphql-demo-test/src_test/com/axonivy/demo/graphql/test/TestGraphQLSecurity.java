@@ -10,7 +10,7 @@ import ch.ivyteam.ivy.security.ISecurity;
 import ch.ivyteam.ivy.security.user.IUserRepository;
 import ch.ivyteam.ivy.security.user.NewUser;
 
-@IvyTest
+@IvyTest(enableWebServer = true)
 class TestGraphQLSecurity {
 
   WebTarget graphQlClient = Ivy.rest().client("test-graphql");
