@@ -1,5 +1,5 @@
 {
-  "format" : "10.0.0",
+  "$schema" : "https://json-schema.axonivy.com/process/12.0.0/process.json",
   "id" : "18AE06C981CB24B6",
   "config" : {
     "data" : "com.axonivy.demo.graphql.demo.Data"
@@ -9,14 +9,17 @@
       "type" : "RequestStart",
       "name" : "start.ivp",
       "config" : {
-        "callSignature" : "start",
-        "outLink" : "start.ivp",
-        "tags" : "demo"
+        "signature" : "start"
       },
+      "tags" : [
+        "demo"
+      ],
       "visual" : {
         "at" : { "x" : 96, "y" : 64 }
       },
-      "connect" : { "id" : "f2", "to" : "f1" }
+      "connect" : [
+        { "id" : "f2", "to" : "f1" }
+      ]
     }, {
       "id" : "f1",
       "type" : "TaskEnd",
@@ -35,6 +38,8 @@
         "at" : { "x" : 276, "y" : 154 },
         "size" : { "width" : 485, "height" : 80 }
       },
-      "connect" : { "id" : "f4", "to" : "f0" }
+      "connect" : [
+        { "id" : "f4", "to" : "f0" }
+      ]
     } ]
 }
