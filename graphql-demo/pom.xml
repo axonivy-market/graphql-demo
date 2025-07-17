@@ -16,7 +16,7 @@
     <dependency>
       <groupId>com.graphql-java</groupId>
       <artifactId>graphql-java</artifactId>
-      <version>230521-nf-execution</version>
+      <version>24.1</version>
     </dependency>
     <dependency>
       <groupId>com.axonivy.ivy.api</groupId>
