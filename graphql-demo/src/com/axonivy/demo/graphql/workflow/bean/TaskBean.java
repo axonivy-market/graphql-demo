@@ -28,7 +28,8 @@ public record TaskBean(
             task.getExpiryTimestamp(),
             task.getPriority(),
             task.getState(),
-            ActivatorBean.createFor(task.responsibles().all().getFirst().get()),
+        ActivatorBean
+            .createFor(!task.responsibles().all().isEmpty() ? task.responsibles().all().getFirst().get() : null),
             CaseBean.createFor(task.getCase()),
             customFields);
   }
