@@ -1,17 +1,30 @@
 # GraphQL Demo
 
-Diese Demo stellt einen GraphQL-Endpunkt bereit, der mit der Ivy Engine läuft. Der Endpunkt unterstützt Abfragen zu Aufgaben und Benutzern und ermöglicht das Erstellen neuer Benutzer. Weitere Informationen findest Du im [GraphQL](https://community.axonivy.com/d/526-graphql) Community-Beitrag.
+Diese Demo versieht eine GraphQL Endpunkt rennen mit den Efeu Motor. Die
+Endpunkt Unterstützungen #abfragen Tasks und Nutzer und erlauben schaffen neue
+Nutzer. Für #mehr Auskunft, sieh die
+[GraphQL](https://community.axonivy.com/d/526-graphql) #Gemeinde- #Posting.
 
 ## Demo
 
-Für die folgende Demonstration, bei der Abfragen an den Endpunkt gesendet werden, wird der [Altair GraphQL Client](https://altairgraphql.dev) verwendet. Dieser Client ist für die meisten gängigen Plattformen verfügbar. Alternativ kann jeder andere Client verwendet werden, der POST-Anfragen senden kann.
+Für die folgende Demonstration von senden Anfragen zu dem Endpunkt, dem [#Altair
+GraphQL Kunde](https://altairgraphql.dev) ist benutzt. Dieser Kunde ist
+verfügbar für die allgemeinsten Bahnsteige. #Irgendein anderer Kunde kann jener
+senden #POSTING Bitten können sein benutzt stattdessen.
 
-![Abfrage für alle Aufgaben](assets/all-tasks.gif)
-![Abfrage für Aufgaben mit Status-Filter](assets/task-by-state.gif)
-![Neuen Benutzer erstellen](assets/create-user.gif)
 
-## Setup
+![Anfrage für alle Tasks](assets/all-tasks.gif) ![Anfrage für Tasks mit
+staatlich Filter](assets/task-by-state.gif) ![Schafft neuen
+Nutzer](assets/create-user.gif)
 
-Auf der Ivy Engine-Seite ist keine besondere Einrichtung erforderlich. Die GraphQL-Ressource `com.axonivy.demo.graphql.resource.GraphQLResource` wird automatisch von der Ivy Engine erkannt und veröffentlicht. Danach ist der Endpunkt über `http://your-ivy-engine-url/your-application/api/graphql` zugänglich, z.B. `http://localhost:8081/designer/api/graphql`.
+## Einrichtung
 
-Auf der Client-Seite muss der Header `X-Requested-By` gesetzt werden, z.B. auf `myClient`, um gültige POST-Anfragen zu senden.
+Keine spezielle Einrichtung ist bedürft auf Efeu Motor #Seite. Das GraphQL
+Ressource `com.axonivy.Demo.graphql.Ressource.GraphQLResource` Ist automatisch
+herausgefunden und verlegt bei den Efeu Motor. Dann ist der Endpunkt erreichbar
+via `http://Eure-Efeu-Motor-url/eure-Antrag/api/graphql`, #z.B.
+`http://localhost:8081/Designer/api/graphql`.
+
+
+Auf Kunde unterstützt den Kopfball `X-#Angefordert-Mal` muss sein gesetzt, #z.B.
+zu `myClient` zu machen gültige #POSTING Bitten.
