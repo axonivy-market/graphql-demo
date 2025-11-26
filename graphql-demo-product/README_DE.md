@@ -17,7 +17,7 @@ andere Client verwendet werden, der POST-Anfragen senden kann.
 Statusfilter](assets/task-by-state.gif) ![Neuen Benutzer
 erstellen](assets/create-user.gif)
 
-## Einrichtung
+## Setup
 
 Auf der Ivy Engine-Seite ist keine spezielle Einrichtung erforderlich. Die
 GraphQL-Ressource `com.axonivy.demo.graphql.resource.GraphQLResource` wird von
