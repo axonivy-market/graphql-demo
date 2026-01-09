@@ -1,17 +1,30 @@
-# GraphQL Demo
+# GraphQL-Demo
 
-Diese Demo stellt einen GraphQL-Endpunkt bereit, der mit der Ivy Engine läuft. Der Endpunkt unterstützt Abfragen zu Aufgaben und Benutzern und ermöglicht das Erstellen neuer Benutzer. Weitere Informationen findest Du im [GraphQL](https://community.axonivy.com/d/526-graphql) Community-Beitrag.
+Diese Demo bietet einen GraphQL-Endpunkt, der mit der Ivy Engine ausgeführt
+wird. Der Endpunkt unterstützt die Abfrage von Aufgaben und Benutzern und
+ermöglicht die Erstellung neuer Benutzer. Weitere Informationen finden Sie im
+[GraphQL](https://community.axonivy.com/d/526-graphql) Community-Beitrag.
 
 ## Demo
 
-Für die folgende Demonstration, bei der Abfragen an den Endpunkt gesendet werden, wird der [Altair GraphQL Client](https://altairgraphql.dev) verwendet. Dieser Client ist für die meisten gängigen Plattformen verfügbar. Alternativ kann jeder andere Client verwendet werden, der POST-Anfragen senden kann.
+Für die folgende Demonstration des Sendens von Abfragen an den Endpunkt wird der
+[Altair GraphQL Client](https://altairgraphql.dev) verwendet. Dieser Client ist
+für die meisten gängigen Plattformen verfügbar. Stattdessen kann auch jeder
+andere Client verwendet werden, der POST-Anfragen senden kann.
 
-![Abfrage für alle Aufgaben](assets/all-tasks.gif)
-![Abfrage für Aufgaben mit Status-Filter](assets/task-by-state.gif)
-![Neuen Benutzer erstellen](assets/create-user.gif)
+
+![Abfrage für alle Aufgaben](assets/all-tasks.gif) ![Abfrage für Aufgaben mit
+Statusfilter](assets/task-by-state.gif) ![Neuen Benutzer
+erstellen](assets/create-user.gif)
 
 ## Setup
 
-Auf der Ivy Engine-Seite ist keine besondere Einrichtung erforderlich. Die GraphQL-Ressource `com.axonivy.demo.graphql.resource.GraphQLResource` wird automatisch von der Ivy Engine erkannt und veröffentlicht. Danach ist der Endpunkt über `http://your-ivy-engine-url/your-application/api/graphql` zugänglich, z.B. `http://localhost:8081/designer/api/graphql`.
+Auf der Ivy Engine-Seite ist keine spezielle Einrichtung erforderlich. Die
+GraphQL-Ressource `com.axonivy.demo.graphql.resource.GraphQLResource` wird von
+der Ivy Engine automatisch erkannt und veröffentlicht. Der Endpunkt ist dann
+über `http://your-ivy-engine-url/your-application/api/graphql` zugänglich, z. B.
+`http://localhost:8081/designer/api/graphql`.
 
-Auf der Client-Seite muss der Header `X-Requested-By` gesetzt werden, z.B. auf `myClient`, um gültige POST-Anfragen zu senden.
+
+Auf der Client-Seite müssen die Header „ `“ und „X-Requested-By“` gesetzt
+werden, z. B. auf „ `myClient` “, um gültige POST-Anfragen zu erstellen.
